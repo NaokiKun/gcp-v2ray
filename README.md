@@ -34,7 +34,7 @@ This project allows you to deploy a **VLESS proxy** server over **WebSocket** us
       "settings": {
         "clients": [
           {
-            "id": "a3b7de87-b46f-4dcf-b6ed-5bf5ebe83167",
+            "id": "a3b7de87-b82f-4dcf-b6ed-5bf5ebe83167",
             "level": 0
           }
         ],
@@ -43,7 +43,7 @@ This project allows you to deploy a **VLESS proxy** server over **WebSocket** us
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/t.me/nkka404"
+          "path": "/naoki"
         }
       }
     }
@@ -80,7 +80,7 @@ docker push gcr.io/YOUR_PROJECT_ID/vless-ws
 gcloud run deploy vless-ws \
   --image gcr.io/YOUR_PROJECT_ID/vless-ws \
   --platform managed \
-  --region us-central1 \
+  --region asia-southeast1 \
   --allow-unauthenticated \
   --port 8080
 ```
@@ -110,7 +110,7 @@ Use the following settings in your client app:
 | Protocol   | VLESS                                  |
 | Address    | `your.domain.com`                      |
 | Port       | `443` (HTTPS)                          |
-| UUID       | `a3b7de87-b46f-4dcf-b6ed-5bf5ebe83167` |
+| UUID       | `a3b7de87-b82f-4dcf-b6ed-5bf5ebe83167` |
 | Encryption | none                                   |
 | Transport  | WebSocket (WS)                         |
 | WS Path    | `/notragnar`                           |
